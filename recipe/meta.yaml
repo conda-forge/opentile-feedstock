@@ -26,7 +26,7 @@ requirements:
     - python >=3.6,<3.12
     - pyturbojpeg >=1.6.1,<2.0.0
     - tifffile >=2022.5.4,<2023.0.0
-    - libjpeg-turbo >=2.1.0 
+    - libjpeg-turbo >=2.1.0
 
 test:
   imports:
