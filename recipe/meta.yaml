@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<3.12
+    - python >=3.9,<3.12
     - poetry
   run:
     - imagecodecs >=2022.12.24,<2023.0.0
@@ -27,7 +27,7 @@ requirements:
     - pyturbojpeg >=1.6.1,<2.0.0
     - tifffile >=2022.5.4,<2023.0.0
     - libjpeg-turbo >=2.1.0
-    - ome-types >=0.3.1
+    - ome-types >=0.4.0
     - defusedxml >=0.7.1
 
 test:
