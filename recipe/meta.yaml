@@ -29,7 +29,7 @@ requirements:
     - libjpeg-turbo >=2.1.0
     - ome-types >=0.4.0
     - defusedxml >=0.7.1
-    - libdeflate >=1.14,<1.15.0a0
+    - libdeflate >=1.18,<1.19.0a0
     - libtiff >=4.6.0,<4.7.0a0
 
 test:
