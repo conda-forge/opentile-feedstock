@@ -31,7 +31,7 @@ requirements:
     - defusedxml >=0.7.1
     - libtiff >=4.5.0,<4.6.0a0
     - libdeflate >=1.18,<1.19.0a0
-    - libjpeg-turbo >=3.0.0,<4.0a0
+    - libjpeg-turbo ==3.0.0
 
 test:
   imports:
