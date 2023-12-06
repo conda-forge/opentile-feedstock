@@ -17,7 +17,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9,<3.12
+    - python >=3.8,<3.9
     - poetry
   run:
     - imagecodecs >2023.1.23
@@ -31,7 +31,6 @@ requirements:
     - defusedxml >=0.7.1
     - libtiff ==4.6.0
     - libdeflate >=1.18,<1.19.0a0
-    - libjpeg-turbo ==3.0.0
 
 test:
   imports:
