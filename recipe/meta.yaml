@@ -1,5 +1,5 @@
 {% set name = "opentile" %}
-{% set version = "0.10.4" %}
+{% set version = "0.11.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentile-{{ version }}.tar.gz
-  sha256: fbbb78e9ab5049176cbe879f9e2b915f257e06ac0647dddb6b5f6890f89e65f7
+  sha256: 09142a685a0322be281d3ba4065c6a15e39527e72da5cfe8009ba3ebb27f0536
 
 build:
   noarch: python
@@ -17,18 +17,20 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6,<3.12
+    - python >=3.9,<3.12
     - poetry
   run:
-    - imagecodecs >=2022.12.24,<2023.0.0
+    - imagecodecs >2023.9.4
     - numpy >=1.22.0,<2.0.0
-    - pillow >=9.1.1,<10.0.0
+    - pillow >=10.1.0,<11.0.0
     - python >=3.6,<3.12
     - pyturbojpeg >=1.6.1,<2.0.0
     - tifffile >=2022.5.4,<2023.0.0
-    - libjpeg-turbo >=2.1.0
-    - ome-types >=0.3.1
+    - libjpeg-turbo ==3.0.0
+    - ome-types >=0.4.0
     - defusedxml >=0.7.1
+    - libtiff ==4.6.0
+    - libdeflate >=1.19,<1.20.0a0
 
 test:
   imports:
