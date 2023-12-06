@@ -30,7 +30,7 @@ requirements:
     - ome-types >=0.4.0
     - defusedxml >=0.7.1
     - libtiff ==4.6.0
-    - libdeflate >=1.18,<1.19.0a0
+    - libdeflate >=1.19,<1.20.0a0
 
 test:
   imports:
