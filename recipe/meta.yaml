@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/opentile-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentile-{{ version }}.tar.gz
   sha256: 4ae56512ae40a39c55ff115abdaf6f3ca5052393f102646f5bd37768c7376303
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.9,<3.12
+    - python {{ python_min }}
     - poetry
   run:
     - imagecodecs >2023.9.4
     - numpy >=1.22.0,<2.0.0
     - pillow >=10.1.0,<11.0.0
-    - python >=3.6,<3.12
+    - python >={{ python_min }},<3.12
     - pyturbojpeg >=1.6.1,<2.0.0
     - tifffile >=2022.5.4,<2023.0.0
     - libjpeg-turbo ==3.0.0
@@ -40,6 +40,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/imi-bigpicture/opentile
