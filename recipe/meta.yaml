@@ -27,11 +27,12 @@ requirements:
     - pyturbojpeg >=1.6.1,<2.0.0
     - tifffile >=2022.5.4,<2023.0.0
     - libjpeg-turbo ==3.0.0
-    - ome-types >=0.4.0
+    - ome-types <0.6.0,>=0.5.0
     - defusedxml >=0.7.1
     - libtiff ==4.6.0
     - libdeflate >=1.19,<1.20.0a0
     - universal_pathlib >=0.2.1
+    - fsspec <2025.0.0,>=2024.2.0
 
 test:
   imports:
