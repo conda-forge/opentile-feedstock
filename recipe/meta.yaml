@@ -1,5 +1,5 @@
 {% set name = "opentile" %}
-{% set version = "0.15.0" %}
+{% set version = "0.15.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentile-{{ version }}.tar.gz
-  sha256: 1f98d5c54558b2876d52fc84eb9c368ecbadaf54daa22af4bd4e663f10acdb59
+  sha256: cb793a095ccd809a82bc9396f91f34f797db0323d0d767cd6f9ff12169412162
 
 build:
   noarch: python
@@ -27,11 +27,12 @@ requirements:
     - pyturbojpeg >=1.6.1,<2.0.0
     - tifffile >=2022.5.4,<2023.0.0
     - libjpeg-turbo ==3.0.0
-    - ome-types >=0.4.0
+    - ome-types <0.6.0,>=0.5.0
     - defusedxml >=0.7.1
     - libtiff ==4.6.0
     - libdeflate >=1.19,<1.20.0a0
     - universal_pathlib >=0.2.1
+    - fsspec <2025.0.0,>=2024.2.0
 
 test:
   imports:
