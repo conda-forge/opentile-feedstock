@@ -21,19 +21,19 @@ requirements:
     - poetry
     - hatchling
   run:
-    - imagecodecs >2023.9.4
+    - imagecodecs >=2022.12.24
     - numpy >=1.22.0,<2.0.0
     - pillow >=10.1.0,<11.0.0
     - python >={{ python_min }},<3.12
-    - pyturbojpeg >=1.6.1,<2.0.0
+    - pyturbojpeg >=1.7.3,<2.0.0
     - tifffile >=2022.5.4,<2023.0.0
     - libjpeg-turbo ==3.0.0
-    - ome-types <0.6.0,>=0.5.0
-    - defusedxml >=0.7.1
+    - ome-types >=0.5.0,<0.6.0
+    - defusedxml >=0.7.1,<0.8.0
     - libtiff ==4.6.0
     - libdeflate >=1.19
-    - universal_pathlib >=0.2.1
-    - fsspec <2025.0.0,>=2024.2.0
+    - universal_pathlib 0.2.1,<0.3.0
+    - fsspec >=2024.2.0,<2025.0.0
 
 test:
   imports:
