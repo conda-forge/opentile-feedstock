@@ -19,6 +19,7 @@ requirements:
     - pip
     - python {{ python_min }}
     - poetry
+    - hatchling
   run:
     - imagecodecs >2023.9.4
     - numpy >=1.22.0,<2.0.0
@@ -33,7 +34,6 @@ requirements:
     - libdeflate >=1.19
     - universal_pathlib >=0.2.1
     - fsspec <2025.0.0,>=2024.2.0
-    - hatchling
 
 test:
   imports:
