@@ -1,5 +1,5 @@
 {% set name = "opentile" %}
-{% set version = "0.23.0" %}
+{% set version = "0.24.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentile-{{ version }}.tar.gz
-  sha256: 93f22b9a69d9dfa1f2e10a0035fbe0ac9f79affed9f89e36be8389b66b3c33a0
+  sha256: 24d1c0c581269e2c23dec45215cdffe8910d635112e5d67997454933f319ddfd
 
 build:
   noarch: python
