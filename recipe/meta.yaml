@@ -1,5 +1,6 @@
 {% set name = "opentile" %}
 {% set version = "0.25.0" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -24,14 +25,15 @@ requirements:
     - python >={{ python_min }}
     - numpy >=1.22.0
     - imagecodecs >=2022.12.24
-    - tifffile >=2022.5.4
+    - tifffile >=2026.7.14
     - pillow >=10.1.0
     - pyturbojpeg >=1.7.3,<2.0.0
     - cachetools >=5.0.0
     - defusedxml >=0.7.1
     - fsspec >=2024.2.0
     - ome-types >=0.5.0
-    - universal-pathlib >=0.2.1
+    - universal-pathlib >=0.3.0,<1.0.0
+    - lxml >=4.9.0
 
 test:
   imports:
