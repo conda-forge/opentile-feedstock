@@ -1,13 +1,14 @@
 {% set name = "opentile" %}
-{% set version = "0.24.0" %}
+{% set version = "0.25.0" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentile-{{ version }}.tar.gz
-  sha256: 24d1c0c581269e2c23dec45215cdffe8910d635112e5d67997454933f319ddfd
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/opentile-{{ version }}.tar.gz
+  sha256: f75962e5a474dde50618f8a310ee2fb587acfcc9934c728babbaa0d1762bf509
 
 build:
   noarch: python
@@ -24,14 +25,15 @@ requirements:
     - python >={{ python_min }}
     - numpy >=1.22.0
     - imagecodecs >=2022.12.24
-    - tifffile >=2022.5.4
+    - tifffile >=2026.7.14
     - pillow >=10.1.0
     - pyturbojpeg >=1.7.3,<2.0.0
     - cachetools >=5.0.0
     - defusedxml >=0.7.1
     - fsspec >=2024.2.0
     - ome-types >=0.5.0
-    - universal-pathlib >=0.2.1
+    - universal-pathlib >=0.3.0,<1.0.0
+    - lxml >=4.9.0
 
 test:
   imports:
