@@ -1,5 +1,5 @@
 {% set name = "opentile" %}
-{% set version = "0.25.0" %}
+{% set version = "0.26.0" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/opentile-{{ version }}.tar.gz
-  sha256: f75962e5a474dde50618f8a310ee2fb587acfcc9934c728babbaa0d1762bf509
+  sha256: 053b15ebd7eda440944300f23cba971a9c822b8f2b10346161421c6cc43788ba
 
 build:
   noarch: python
